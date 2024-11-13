@@ -1,0 +1,119 @@
+/* Page background styling */
+.page-background {
+    background-image: url('https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/12CDF/production/_104732077_gettyimages-865966714.jpg'); /* Set your background image path here */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container for the request page */
+  .request-page-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 8px;
+  }
+  
+  /* Heading for the Request page */
+  .request-page-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Pet Image styling */
+  .pet-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  /* Form container styling */
+  .request-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the form */
+  .request-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Form input field styling */
+  .request-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .request-form input,
+  .request-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .request-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Submit button styling */
+  .request-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .request-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Success message styling */
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .success-message p {
+    margin: 0;
+  }
+  
+  /* Loading message styling */
+  .request-page-container p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 30px;
+  }
+  

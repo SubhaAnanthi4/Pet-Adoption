@@ -1,0 +1,148 @@
+/* Global Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Pet Form Page Background */
+.pet-form-page {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-pet-shop-lovely-cartoon-moe-image_19408.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-right: 0.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+/* Form Container */
+.pet-form-container {
+  max-width: 450px;
+  margin: 100 auto;
+  padding: 50px;
+  background-color: rgba(249, 249, 249, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Title */
+.pet-form-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form Inputs */
+.pet-form-inputs input[type="text"],
+.pet-form-inputs input[type="number"],
+.pet-form-inputs input[type="file"] {
+  width: 90%; /* Reduced width for more compact form */
+  padding: 8px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pet-form-inputs input[type="text"]:focus,
+.pet-form-inputs input[type="number"]:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Submit Button */
+.pet-form-submit button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.pet-form-submit button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar-links a {
+    margin: 5px 0;
+  }
+
+  .pet-form-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .pet-form-inputs input[type="text"],
+  .pet-form-inputs input[type="number"],
+  .pet-form-inputs input[type="file"],
+  .pet-form-submit button[type="submit"] {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}

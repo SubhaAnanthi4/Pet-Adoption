@@ -1,0 +1,87 @@
+/* Background container */
+.log-background {
+  background-image: url('https://t4.ftcdn.net/jpg/08/89/30/41/360_F_889304168_4Z2SdpTY7UVKJV3UbQKrsPZrxhodEZg1.jpg'); /* Set your image URL here */
+  background-color: #f0f0f0; /* Fallback color */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* Prevent repeating the background */
+  min-height: 100vh; /* Ensure the background covers the full viewport height */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  padding: 20px; /* Optional: Add padding around the content */
+}
+
+/* Centering the logout container */
+.logout-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Logout button styling */
+.logout-btn {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #ff2e00;
+}
+
+/* Confirmation popup styling */
+.confirmation-popup {
+  background-color: rgba(246, 241, 241, 0.8);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(237, 234, 234, 0.2);
+}
+
+.confirmation-popup h2 {
+  margin-bottom: 20px;
+}
+
+/* Buttons in the confirmation popup */
+.confirmation-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.yes-btn, .no-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.yes-btn:hover, .no-btn:hover {
+  background-color: #218838;
+}
+
+.no-btn {
+  background-color: #dc3545;
+}
+
+.no-btn:hover {
+  background-color: #c82333;
+}
+
+/* Success message styling */
+.success-message {
+  color: #28a745;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}

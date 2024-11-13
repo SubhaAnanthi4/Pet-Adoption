@@ -1,0 +1,82 @@
+/* Admin Login Page Styles */
+.admin-page-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-image: url('https://img.pikbest.com/backgrounds/20190605/creative-background-synthesis-of-pet-cat-adoption_1894717.jpg!bw700'); /* Update with actual path */
+  background-size: cover;
+  background-position: center;
+}
+
+.admin-login-wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(244, 244, 249, 0.9); /* Slightly transparent for overlay effect */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-wrapper h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+
+.admin-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.admin-button:hover {
+  background-color: #45a049;
+}
+
+.admin-button:active {
+  background-color: #388e3c;
+}
+
+.admin-input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+.admin-login-title {
+  color: #4caf50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.admin-login-wrapper p {
+  color: #777;
+  font-size: 14px;
+}
+
+.admin-login-wrapper p a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.admin-login-wrapper p a:hover {
+  text-decoration: underline;
+}
