@@ -58,7 +58,7 @@ const Request = () => {
             {pet.image && (
               <img
                 className="pet-image"
-                src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${pet.image.replace('E:\project\completed project\Full-Stack-Pet--main\backend\pet-platform\pet\public\uploads\\', '')}`}
+                src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${pet.image.replace('E:\\project\\completed project\\Full-Stack-Pet--main\\backend\\pet-platform\\pet\\public\\uploads\\', '')}`}
                 alt={pet.name}
               />
             )}
