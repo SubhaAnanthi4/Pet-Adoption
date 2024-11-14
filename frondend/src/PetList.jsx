@@ -14,7 +14,7 @@ const PetList = () => {
   useEffect(() => {
     const fetchPets = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/petlist', {
+        const response = await axios.get('https://pet-adoption-backend-3rp0.onrender.com/petlist', {
           params: {
             search: searchQuery,
             type: selectedType, // Send selected type for filtering
