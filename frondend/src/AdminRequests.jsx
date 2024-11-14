@@ -11,7 +11,7 @@ const AdminRequests = () => {
   useEffect(() => {
     const fetchRequests = async () => {
       try {
-        const response = await axios.get('https://full-stack-pet-backend.onrender.com/getrequests');
+        const response = await axios.get('https://pet-adoption-backend-3rp0.onrender.com/getrequests');
         const requestData = response.data;
         setRequests(requestData);
 
