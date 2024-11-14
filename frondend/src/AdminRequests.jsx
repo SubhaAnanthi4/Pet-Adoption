@@ -34,7 +34,7 @@ const AdminRequests = () => {
 
     const fetchSuccessEntries = async () => {
       try {
-        const response = await axios.get('https://full-stack-pet-backend.onrender.com/getSuccessEntries');
+        const response = await axios.get('https://pet-adoption-backend-3rp0.onrender.com/getSuccessEntries');
         setSuccessEntries(response.data);
       } catch (error) {
         console.error('Error fetching success entries:', error.message);
