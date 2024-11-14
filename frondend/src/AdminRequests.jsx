@@ -104,7 +104,7 @@ const AdminRequests = () => {
                   {/* Display the pet image */}
                   {pets[request.petId] && pets[request.petId].image && (
                     <img 
-                      src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${pets[request.petId].image.replace('E:\\project\\pet-platform\\pet\\backend\\pet-platform\\pet\\public\\uploads\\', '')}`} 
+                      src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${pets[request.petId].image.replace('E:\project\completed project\Full-Stack-Pet--main\backend\pet-platform\pet\public\uploads\', '')}`} 
                       alt={pets[request.petId].name} 
                       className="pet-image" 
                     />
