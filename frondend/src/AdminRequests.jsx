@@ -49,7 +49,7 @@ const AdminRequests = () => {
     console.log("user", userEmail);
 
     try {
-      await axios.post('https://full-stack-pet-backend.onrender.com/send-mail', {
+      await axios.post('https://pet-adoption-backend-3rp0.onrender.com/send-mail', {
         userEmail,
         petName,
       });
