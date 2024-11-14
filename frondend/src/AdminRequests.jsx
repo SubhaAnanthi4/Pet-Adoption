@@ -55,7 +55,7 @@ const AdminRequests = () => {
       });
 
       // Move the request and pet to the success collection
-      await axios.post('https://full-stack-pet-backend.onrender.com/mark-success', {
+      await axios.post('https://pet-adoption-backend-3rp0.onrender.com/mark-success', {
         requestId,
         petId,
       });
@@ -71,7 +71,7 @@ const AdminRequests = () => {
       });
 
       // Refresh success entries to include the new success entry
-      const updatedSuccessEntries = await axios.get('https://full-stack-pet-backend.onrender.com/getSuccessEntries');
+      const updatedSuccessEntries = await axios.get('https://pet-adoption-backend-3rp0.onrender.com/getSuccessEntries');
       setSuccessEntries(updatedSuccessEntries.data);
     } catch (error) {
       console.error('Error processing request:', error);
