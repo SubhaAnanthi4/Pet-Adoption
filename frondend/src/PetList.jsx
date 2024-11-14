@@ -83,7 +83,7 @@ const PetList = () => {
                 {pet.image && (
                   <img
                   className="pet-item-image"
-                  src={`http://localhost:5000/uploads/${pet.image.split('/').pop()}`}  // Get only the filename
+                  src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${pet.image.split('/').pop()}`}  // Get only the filename
                   alt={pet.name}
                 />
                 
