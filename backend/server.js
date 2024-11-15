@@ -147,6 +147,7 @@ app.post('/request', async (req, res) => {
 app.get('/getrequests', async (req, res) => {
   try {
     const requests = await Request.find();
+    console.log(requests);
     res.status(200).json(requests);
   } catch (error) {
     console.error('Error fetching requests:', error.message);
