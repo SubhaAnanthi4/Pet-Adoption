@@ -104,8 +104,8 @@ const AdminRequests = () => {
                   {/* Display the pet image */}
                   {pets[request.petId] && pets[request.petId].image && (
                     <img 
-                      src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${pets[request.petId].image.replace('E:\\project\\completed project\\Full-Stack-Pet--main\\backend\\pet-platform\\pet\\public\\uploads\\', '')}`} 
-                      alt={pets[request.petId].name} 
+                    src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${pets[request.petId].image.split('/').pop()}`}
+                    alt={pets[request.petId].name} 
                       className="pet-image" 
                     />
                   )}
@@ -139,8 +139,8 @@ const AdminRequests = () => {
           {/* Display the pet image */}
           {entry.pet && entry.pet.image && (
             <img 
-              src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${entry.pet.image.replace('E:\\project\\completed project\\Full-Stack-Pet--main\\backend\\pet-platform\\pet\\public\\uploads\\', '')}`} 
-              alt={entry.pet.name} 
+            src={`https://pet-adoption-backend-3rp0.onrender.com/uploads/${entry.pet.image.split('/').pop()}`}
+            alt={entry.pet.name} 
               className="pet-image" 
             />
           )}
